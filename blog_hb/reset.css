@@ -1,33 +1,7 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700;900&family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
-
-@font-face {
-  font-family: "young_20sregular";
-  src: url("/fonts/young20sregular-wrb3-webfont.woff2") format("woff2"), url("/fonts/young20sregular-wrb3-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Odalisque";
-   src: url("/fonts/Odalisque.woff")  format("woff"), 
-   url("/fonts/OdalisqueNf.ttf") format("truetype");
-
-}
-@font-face {
-    font-family: 'AGA-Cordoba-V2-B17-Bold';
-    src:url('/fonts/AGA-Cordoba-V2-B17-Bold.ttf.woff') format('woff'),
-        url('/fonts/AGA-Cordoba-V2-B17-Bold.ttf.svg#AGA-Cordoba-V2-B17-Bold') format('svg'),
-        url('/fonts/AGA-Cordoba-V2-B17-Bold.ttf.eot'),
-        url('/fonts/AGA-Cordoba-V2-B17-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-    /* The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
-***/ */
+***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -106,9 +80,4 @@ meter {
 /* apply back the draggable feature - exist only in Chromium and Safari */
 :where([draggable="true"]) {
     -webkit-user-drag: element;
-}
-
-.title{
-  font-family: young_20sregular ;
-  font-size: 4rem;
 }

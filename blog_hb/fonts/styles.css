@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700;900&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+/*   color variables */
+/*   color variables */
+@font-face {
+  font-family: "young_20sregular";
+  src: url("young20sregular-wrb3-webfont.woff2") format("woff2"), url("young20sregular-wrb3-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Odalisque";
+  src: url("Odalisque.eot");
+  src: url("Odalisque.eot?iefix") format("eot"), url("Odalisque.woff") format("woff"), url("Odalisque.ttf") format("truetype"), url("Odalisque.svg#webfont") format("svg");
+}
+/* Coolors Exported Palette - https://coolors.co/fec5bb-fcd5ce-fae1dd-f8edeb-e8e8e4-d8e2dc-ece4db-ffe5d9-ffd7ba-fec89a */
+/* CSS HEX */
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
+/*   border radius */
+.home-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 110%;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-size: 2rem;
+  font-weight: 700;
+  z-index: 100;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation.active {
+  left: 0;
+}
+.navigation ul {
+  position: relative;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+.navigation ul li a {
+  font-size: 2.2rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+}
+.navigation ul li a:hover {
+  color: #d76f33;
+}
+
+.toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #d76f33 url("/assets/images/menu.png");
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 20;
+}
+.toggle.active {
+  background: #d76f33 url("/assets/images/close.png");
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  color: #212121;
+  background: linear-gradient(135deg, #fec5bbff, #fcd5ceff, #fae1ddff, #f8edebff, #e8e8e4ff, #d8e2dcff, #ece4dbff, #ffe5d9ff, #ffd7baff, #fec89aff);
+}
+
+.home__content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  padding: 5rem;
+  max-width: 600px;
+}
+
+.title {
+  font-family: "young_20sregular", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #713d4a;
+}
+
+p {
+  margin: 20px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: linear-gradient(45deg, #fec5bbff, #fcd5ceff, #fae1ddff, #f8edebff, #e8e8e4ff, #d8e2dcff, #ece4dbff, #ffe5d9ff, #ffd7baff, #fec89aff);
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border-radius: 1.125rem;
+  font-size: 1rem;
+  -webkit-text-stroke: 1px black;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(225deg, #fec5bbff, #fcd5ceff, #fae1ddff, #f8edebff, #e8e8e4ff, #d8e2dcff, #ece4dbff, #ffe5d9ff, #ffd7baff, #fec89aff);
+}
+
+/* Package details:
+https://www.npmjs.com/package/houdini-cosmic-starfield
+*//*# sourceMappingURL=styles.css.map */
