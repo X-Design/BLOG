@@ -1,0 +1,15 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700;900&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+:root{
+--kleur1:hsl(22, 29%, 45%); 
+--kleur2:hsl(30, 19%, 49%);
+--kleur3:hsl(22, 21%, 23%);
+--kleur4:hsl(180, 21%, 23%);
+--kleur5:hsl(179, 38%, 42%);
+--kleur6:hsl(354,58%,40%);
+--kleur7:hsl(36, 92%,79%);
+--kleur8:hsl(39, 89%,66%);
+--kleur9:hsl(53, 40%,65%);
+--kleur10:hsl(100,13%,55%);
+}
