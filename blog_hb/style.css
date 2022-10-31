@@ -42,6 +42,11 @@
 *::after {
     box-sizing: border-box;
 }
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
 
 /* Reapply the pointer cursor for anchor tags */
 a, button {
@@ -118,6 +123,7 @@ meter {
     --ff-body1: 'Raleway', sans-serif;
     --ff-title1: 'young_20sregular', sans-serif;
     --ff-title2:'AGA-Cordoba-V2-B17-Bold',sans-serif;
+
     /* sizes */
  
     --fw-bold: 700;
@@ -142,15 +148,60 @@ body{
     font-size: var(--fs-600);
     font-family: var(--ff-body1);
 }
-
-.title{
-    font-size: var(--fs-800);
-    color: var(--titlecolor1);
-    font-family: var(--ff-title2);
+.primary-heading{
+  font-family: var(--ff-primary-heading);
+  font-size: 70px;
+  color: var(--artnov-1);
+  line-height: 4rem;
+}
+.header{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.tekst{
-    font-size: var(--fs-500);
-    color: var(--txt-color1);
-    font-family: var(--ff-body1);
+.nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  border-bottom: 1px solid black;
+}
+.nav-bar a {
+ padding:0 .5rem;
+ height:var(--nav-height);
+ display:grid;
+ place-content:center;
+ background-repeat:no-repeat;
+ background-size:100% var(--nav-height);
+ background-position:center var(--nav-height);
+ text-decoration:none;
+ font-weight:500;
+ -webkit-transition:background-position 150ms ease-in-out;
+ transition:background-position 150ms ease-in-out;
+ margin-inline: auto;
+}
+.nav-bar > a:first-of-type {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#0fba00),to(#0003ba));
+  background-image: linear-gradient(var(--artnov-1),var(--artnov-1));
+}
+
+.nav-bar > a:nth-of-type(2) {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#ba0000),to(#ba0000));
+  background-image: linear-gradient(var(--artnov-5),var(--artnov-5));
+}
+.nav-bar > a:nth-of-type(3) {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#ba0000),to(#ba0000));
+  background-image: linear-gradient(var(--artnov-dark-1),var(--artnov-dark-1));
+}
+.nav-bar > a:nth-of-type(4) {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#7dc0a1),to(#7dc0a1));
+  background-image: linear-gradient(var(--artnov-dark-2),var(--artnov-dark-2));
+}
+.nav-bar a:hover {
+  background-position: center calc(var(--nav-height) - 6px);
+  /* color: inherit; */
+  font-weight: var(--fw-bold);
+  color:hsl(130, 30%, 38%); 
+  font-size: var(--fs-800); 
 }
