@@ -114,10 +114,23 @@ meter {
 /* begin  */
  :root{
     /* colors */
-    --bg-color1: hsl(36,92%,79%);
-    --txt-color1: hsl(179, 85%, 16%);
-    --titlecolor1:hsl(354,58%,40%);
-    --border-color:hsl(9, 44%, 18%);
+  --bg-color1: hsl(36,92%,79%);
+  --txt-color1: hsl(179, 85%, 16%);
+  --titlecolor1:hsl(354,58%,40%);
+  --border-color:hsl(9, 44%, 18%);
+  --bg-color1:hsl(96, 71%, 97%);
+  --artnov-1:hsl(354, 58%, 40%);
+  --artnov-2:hsl(36, 93%, 79%);
+  --artnov-3:hsl(39,89%,66%);
+  --artnov-4:hsl(53,40%,65%);
+  --artnov-5:hsl(0, 79%, 81%);
+  --artnov-dark-1: hsl(189, 32%, 28%);
+  --artnov-dark-2:hsl(194, 23%, 71%);
+  --color-primary: #3a00ff;
+  --clr-text-400:hsl(30, 32%, 15%);
+  --clr-accent-400: hsl(17, 60%, 18%);
+
+
 
     /* fonts */
     --ff-body1: 'Raleway', sans-serif;
@@ -126,39 +139,90 @@ meter {
 
     /* sizes */
  
-    --fw-bold: 700;
-    --fw-regular:400;
-    --fw-semibold:500;
-    --fw-extra:800;
+   
+  --fw-bold: 700;
+  --fw-regular:400;
+  --fw-semibold:500;
+  --fw-extra:800;
 
-    --fs-300: 0.8125rem;
-    --fs-400: 0.875rem;
-    --fs-500: 1rem;
-    --fs-600: 1.875rem;
-    --fs-700: 2.5rem;
-    --fs-800: 6rem;
-    --fs-primary-heading: 3rem;
+  --fs-300: 0.8125rem;
+  --fs-400: 0.875rem;
+  --fs-500: 1rem;
+  --fs-600: 1.875rem;
+  --fs-700: 2.5rem;
+  --fs-800: 6rem;
+  --fs-primary-heading: 3rem;
+
+  --fs-body: var(--fs-400);
+  --fs-nav: var(--fs-500);
+  --fs-button: var(--fs-300);
+  --size-100:.25rem;
+  --size-200:.5rem;
+  --size-300:.75rem;
+  --size-400:1rem;
+  --size-500:1.25rem;
+  --size-600:2rem;
+  --size-700:3rem;
+  --size-800:4rem;
+  --size-900:5rem;
+
 
  }
 
 
 
 body{
-    background-color: var(--bg-color1);
-    font-size: var(--fs-600);
-    font-family: var(--ff-body1);
+background-color: var(--bg-color1);
+  font-size: var(--fs-600);
+  font-family: var(--ff-body);
+
 }
-.primary-heading{
+
+.padding-block-400{
+  padding-block: var(--size-400);
+}
+.padding-block-900{
+  padding-block: var(--size-900);
+}
+.text-neutral-900{
+  color:var(--clr-text-400);
+  line-height: 1.875rem;
+}
+
+
+.ff-primary-heading{
   font-family: var(--ff-primary-heading);
   font-size: 70px;
   color: var(--artnov-1);
   line-height: 4rem;
 }
-.header{
-  padding-top: 2em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid var(--border-color);
+.fs-bold{
+  font-weight: var(--fs-bold);
+
 }
+
+.title1{
+  line-height: 8rem;
+  padding-left:15%;
+}
+
+.container {
+  --max-width: 1110px;
+  --padding:1rem;
+  
+  width: min(--max-width), 100% - (var(--padding)*2);
+  margin-inline: auto;
+}
+
+:where(.flow > :not(:first-child)){
+  margin-top: var(--flow-spacer, 2em);
+}
+@media screen and (min-width: 751px){
+.about main {
+    display: grid;
+    grid-template-columns: minmax(300px,600px) minmax(230px,1fr);
+    grid-column-gap: 6vw;
+}}
 
 .nav-bar{
   display: flex;
