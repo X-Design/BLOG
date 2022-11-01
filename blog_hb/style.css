@@ -164,9 +164,9 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   border-bottom: 1px solid black;
 }
+
 .nav-bar a {
  padding:0 .5rem;
  height:var(--nav-height);
@@ -203,5 +203,5 @@ body{
   /* color: inherit; */
   font-weight: var(--fw-bold);
   color:hsl(130, 30%, 38%); 
-  font-size: var(--fs-800); 
+  font-size: var(--fs-600); 
 }
